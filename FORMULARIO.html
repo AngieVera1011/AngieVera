@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro</title>
+</head>
+  <style>
+        body {font-family: Arial, sans-serif;
+            background-color:#f2f2f2;
+            margin: 0;
+            padding: 0;}
+  </style>
+<body>
+    <h1 style="text-align:center;">FORMULARIO</h1><br>
+
+ <form>
+	<p style="text-align:center;">
+        <label for="cedula"><strong>Cedula:</strong></label>
+        <input type="text" id="cedula" name="cedula" required>
+        <label for="nombre"> <strong>Nombre: </strong></label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+	<label for="apellido"><strong>Apellido:</strong></label>
+        <input type="text" id="apellido" name="apellido" required>
+        <label for="email"><strong>Correo Electronico: </strong></label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label> <strong>Genero: </strong></label><br><br>
+        <input type="radio" id="genero-masculino" name="genero" value="Masculino">
+        <label for="genero-masculino">Masculino</label><br>
+        <input type="radio" id="genero-femenino" name="genero" value="Femenino">
+        <label for="genero-femenino">Femenino</label><br>
+	<input type="radio" id="genero-no-declarar" name="genero" value="Prefiero no decirlo">
+        <label for="genero-no-declarar">Prefiero no decirlo</label><br><br>
+
+        <label for="rango"><strong>Rango de edad: </strong></label>
+        <select id="rango" name="rango">
+	    <option value="seleccion">-----</option>
+            <option value="nino">5-10</option>
+            <option value="joven">11-18</option>
+            <option value="adulto">19-25</option>
+            <option value="Otros">Otros</option>
+        </select><br><br>
+
+  	<label><strong>Ritmos de Preferencia: </strong></label><br><br>
+        <input type="checkbox" id="rock" name="preferencias" value="rock">
+        <label for="rock">Rock</label><br>
+        <input type="checkbox" id="Regueton" name="preferencias" value="regueton">
+        <label for="regueton">Regueton</label><br>
+        <input type="checkbox" id="Hip-Hop" name="preferencias" value="Hip-Hop">
+        <label for="Hip-Hop">Hip-Hop</label><br><br>
+
+	<input type="submit" value="Enviar">
+    </form>
+</p>
+</body>
+</html>
